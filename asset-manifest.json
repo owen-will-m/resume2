@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.2a867577.css",
-    "main.js": "/static/js/main.ddbf56b8.js",
-    "static/js/787.dc9ee2bf.chunk.js": "/static/js/787.dc9ee2bf.chunk.js",
-    "static/media/3.png": "/static/media/3.776aa63e64c827632e02.png",
-    "static/media/prof-pic.png": "/static/media/prof-pic.170449936eaaeb09c293.png",
-    "static/media/2.png": "/static/media/2.82d708ae19948d78aa28.png",
-    "static/media/alt.tiff": "/static/media/alt.020571e063ab62707191.tiff",
-    "static/media/1.png": "/static/media/1.314fb42353cda16f714b.png",
-    "static/media/AvenirNext-DemiBold.ttf": "/static/media/AvenirNext-DemiBold.ca33239cfb0343e308bd.ttf",
-    "static/media/avenir-heavy.ttf": "/static/media/avenir-heavy.747d90226a0b2cdfe114.ttf",
-    "static/media/will-owen-resume.pdf": "/static/media/will-owen-resume.d4a3b7ce54f44deb3883.pdf",
-    "static/media/avenir-bold.otf": "/static/media/avenir-bold.711a4eb654bf1139f123.otf",
-    "static/media/avenir-regular.otf": "/static/media/avenir-regular.94f2f163d4b698242fef.otf",
-    "static/media/bg.svg": "/static/media/bg.8144c9357fc4acf9db9bbfe52901f178.svg",
-    "index.html": "/index.html",
-    "main.2a867577.css.map": "/static/css/main.2a867577.css.map",
-    "main.ddbf56b8.js.map": "/static/js/main.ddbf56b8.js.map",
-    "787.dc9ee2bf.chunk.js.map": "/static/js/787.dc9ee2bf.chunk.js.map"
+    "main.css": "/willmowen.com/static/css/main.55e4b766.css",
+    "main.js": "/willmowen.com/static/js/main.bf1121de.js",
+    "static/js/787.dc9ee2bf.chunk.js": "/willmowen.com/static/js/787.dc9ee2bf.chunk.js",
+    "static/media/3.png": "/willmowen.com/static/media/3.776aa63e64c827632e02.png",
+    "static/media/prof-pic.png": "/willmowen.com/static/media/prof-pic.170449936eaaeb09c293.png",
+    "static/media/2.png": "/willmowen.com/static/media/2.82d708ae19948d78aa28.png",
+    "static/media/alt.tiff": "/willmowen.com/static/media/alt.020571e063ab62707191.tiff",
+    "static/media/1.png": "/willmowen.com/static/media/1.314fb42353cda16f714b.png",
+    "static/media/AvenirNext-DemiBold.ttf": "/willmowen.com/static/media/AvenirNext-DemiBold.ca33239cfb0343e308bd.ttf",
+    "static/media/avenir-heavy.ttf": "/willmowen.com/static/media/avenir-heavy.747d90226a0b2cdfe114.ttf",
+    "static/media/will-owen-resume.pdf": "/willmowen.com/static/media/will-owen-resume.d4a3b7ce54f44deb3883.pdf",
+    "static/media/avenir-bold.otf": "/willmowen.com/static/media/avenir-bold.711a4eb654bf1139f123.otf",
+    "static/media/avenir-regular.otf": "/willmowen.com/static/media/avenir-regular.94f2f163d4b698242fef.otf",
+    "static/media/bg.svg": "/willmowen.com/static/media/bg.8144c9357fc4acf9db9bbfe52901f178.svg",
+    "index.html": "/willmowen.com/index.html",
+    "main.55e4b766.css.map": "/willmowen.com/static/css/main.55e4b766.css.map",
+    "main.bf1121de.js.map": "/willmowen.com/static/js/main.bf1121de.js.map",
+    "787.dc9ee2bf.chunk.js.map": "/willmowen.com/static/js/787.dc9ee2bf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a867577.css",
-    "static/js/main.ddbf56b8.js"
+    "static/css/main.55e4b766.css",
+    "static/js/main.bf1121de.js"
   ]
 }
