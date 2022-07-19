@@ -5,9 +5,35 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "AvenirRegular";
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "AvenirRegular";
+  src: local("AvenirRegular"),
+   url("./fonts/avenir-regular.otf") format("truetype");
+  font-weight: 400;
+  }
+  @font-face {
+    font-family: "AvenirBold";
+    src: local("AvenirBold"),
+     url("./fonts/avenir-bold.otf") format("truetype");
+    font-weight: 700;
+    }
+    @font-face {
+      font-family: "AvenirHeavy";
+      src: local("AvenirHeavy"),
+       url("./fonts/avenir-heavy.ttf") format("truetype");
+      font-weight: 900;
+      }
+      @font-face {
+        font-family: "AvenirDemiBold";
+        src: local("AvenirDemiBold"),
+         url("./fonts/AvenirNext-DemiBold.ttf") format("truetype");
+        font-weight: 600;
+        }

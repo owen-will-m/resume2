@@ -1,38 +1,304 @@
 .App {
-  text-align: center;
+  /* border: 3px solid black; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  background-color: #f5edee;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: 40pt;
+  font-weight: 900;
+  margin: 0;
+  font-family: AvenirHeavy;
+  margin-bottom: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h2 {
+  font-size: 35pt;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  font-family: AvenirDemiBold;
+  letter-spacing: -1px;
+}
+h3 {
+  font-family: AvenirBold;
+  margin: 0;
+  font-size: 20pt;
+}
+
+h4 {
+  margin: 0;
+  font-size: 16pt;
+}
+
+html {
+  font-size: 14pt;
+}
+
+.header-left {
+  margin: 1rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.header-right {
+  display: flex;
+  align-items: baseline;
+  gap: 4rem;
+  margin: 1rem;
+  margin-right: 2rem;
+}
+
+.navLink {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 0.5rem;
+  font-size: 18pt;
+  font-weight: 500;
 }
 
-.App-link {
-  color: #61dafb;
+.navLink:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
+/* here's where animation happens*/
 
-@keyframes App-logo-spin {
-  from {
+@keyframes wiggle {
+  0% {
     transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  16.5% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  83.5% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
+
+.move{
+  width:3rem;
+}
+
+.navLink:hover > .move {
+  animation: wiggle 0.3s infinite;
+  position: relative;
+  top: -10px;
+}
+
+/* @keyframes spin{
+  0%{
+transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(180deg);
+
+  }
+  100%{
+    transform: rotate(360deg);
+
+  }
+}
+
+.move{
+animation: spin 5s infinite linear;
+filter:saturate(500%);
+} */
+
+.pageContainer {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  margin-left: 0rem;
+}
+
+.bg {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -10;
+  background-color: #f0e8d1;
+  overflow: hidden;
+}
+
+.bg img {
+  position: absolute;
+  z-index: -9;
+  bottom: -2rem;
+  right: 0;
+  width: 80vh;
+  height: auto;
+}
+
+.crystals {
+  position: absolute;
+  top: 8rem;
+  left: 0;
+  height: calc(100vh - 8rem);
+  width: 100vw;
+}
+
+@keyframes change1 {
+  from {
+    d: path(
+      "M717.957 -1.72948e-05L1284 212L1153.5 287L0.00243731 65.5L0.00244141 0.00120341L717.957 -1.72948e-05Z"
+    );
+  }
+  to {
+    d: path(
+      "M717.957 -2.51929e-05L1542.5 287L1366 416L0.00243731 65.5L0.00244141 0.00119551L717.957 -2.51929e-05Z"
+    );
+  }
+}
+
+#path1 {
+  stroke: black;
+
+  animation-timing-function: ease-in-out;
+  animation-duration: 10s;
+  animation-name: change1;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes change2 {
+  from {
+    d: path(
+      "M-0.000683955 1242.5L-0.000732422 65.5017L1153.5 286.935L1440.5 616L1140 954L718.497 1242.5L-0.000683955 1242.5Z"
+    );
+  }
+  to {
+    d: path(
+      "M-0.000683955 1242.5L-0.000732422 65.5017L1366 416L1402 811.5L1229.5 920L718.494 1242.5L-0.000683955 1242.5Z"
+    );
+  }
+}
+
+#path2 {
+  stroke: black;
+  animation-timing-function: ease-in-out;
+  animation-duration: 10s;
+  animation-name: change2;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes change3 {
+  from {
+    d: path(
+      "M1503.5 1031.5L1140 954L718.502 1242.5L1660.5 1242.8L1503.5 1031.5Z"
+    );
+  }
+  to {
+    d: path("M1417.5 954L1229.5 920L718.502 1242.5L1660.5 1242.8L1417.5 954Z");
+  }
+}
+
+#path3 {
+  stroke: black;
+  animation-timing-function: ease-in-out;
+  animation-duration: 10s;
+  animation-name: change3;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes change4 {
+  from {
+    d: path("M1140 954L1440.5 616L1503.5 1031.5L1140 954Z");
+  }
+  to {
+    d: path("M1229.5 920L1402 811.5L1417.5 954L1229.5 920Z");
+  }
+}
+
+#path4 {
+  stroke: black;
+  animation-timing-function: ease-in-out;
+  animation-duration: 10s;
+  animation-name: change4;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes change5 {
+  from {
+    d: path(
+      "M718.065 3.72304e-05L1917.5 0L1885.5 214.5L1284 212L718.065 3.72304e-05Z"
+    );
+  }
+  to {
+    d: path(
+      "M718.065 3.72304e-05L1917.5 0L1885.5 381L1542.5 287L718.065 3.72304e-05Z"
+    );
+  }
+}
+
+#path5 {
+  stroke: black;
+  animation-timing-function: ease-in-out;
+  animation-duration: 10s;
+  animation-name: change5;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes change6 {
+  from {
+    d: path("M1284 212L1885.5 214.5L1440.5 616L1153.5 287L1284 212Z");
+  }
+  to {
+    d: path("M1542.5 287L1885.5 381L1402 811.5L1366 416L1542.5 287Z");
+  }
+}
+
+#path6 {
+  stroke: black;
+  animation-timing-function: ease-in-out;
+  animation-duration: 10s;
+  animation-name: change6;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes change7 {
+  from {
+    d: path(
+      "M2260 0.501433L2260 290.5L1885.5 214.5L1917.5 -1.04647e-05L2260 0.501433Z"
+    );
+  }
+  to {
+    d: path(
+      "M2260 0.501433L2260 290.5L1885.5 381L1917.5 -1.04647e-05L2260 0.501433Z"
+    );
+  }
+}
+
+#path7 {
+  stroke: black;
+  animation-timing-function: ease-in-out;
+  animation-duration: 10s;
+  animation-name: change7;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+

@@ -1,0 +1,8 @@
+.subContainer{
+    display:flex;
+    flex-direction:column;
+    
+}
+.subContainer > :last-child{
+    margin-top :1rem;
+}

@@ -1,0 +1,23 @@
+.Resume{
+    flex:1;
+    min-height: 0;
+    margin:2rem;
+    font-size:18pt;
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+
+.imgContainer{
+    min-height: 0;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.imgContainer img{
+    border: 1px solid black;
+    width:50rem;
+
+}
