@@ -1,8 +1,8 @@
 {
   "name": "resume",
   "version": "0.1.0",
-  "homepage": "https://owen-will-m.github.io",
-  "private": true,
+  "homepage": "https://willmowen.com/",
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
