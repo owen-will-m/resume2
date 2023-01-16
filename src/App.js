@@ -1,7 +1,6 @@
 import "./App.css";
 import About from "./About";
 import Projects from "./Projects";
-import Resume from "./Resume";
 import Contact from "./Contact";
 import { useState } from "react";
 import RIDLT from "./RIDLT";
@@ -10,6 +9,8 @@ import Processing from "./Processing";
 import HMP from "./HMP";
 import { ReactComponent as Background } from "./bg.svg";
 import profPic from "./prof-pic.png";
+import pdf from "./will-owen-resume.pdf";
+
 
 function App() {
   const [active, setActive] = useState("about");
@@ -45,16 +46,16 @@ function App() {
               projects
             </h4>
           </div>
-          <div className="navLink" onClick={() => setActive("resume")}>
+          <a href = {pdf} target = "_blank" style={
+              { color: "black" } 
+              } rel="noreferrer">
+          <div className="navLink">
             <img className="move" src="shapes/shape3.svg" alt="shape1"></img>
-            <h4
-              style={
-                active === "resume" ? { textDecoration: "underline" } : null
-              }
-            >
+            <h4>
               resume
             </h4>
           </div>
+          </a>
           <div className="navLink" onClick={() => setActive("contact")}>
             <img className="move" src="shapes/shape4.svg" alt="shape1"></img>
             <h4
@@ -71,7 +72,6 @@ function App() {
 
         {active === "about" ? <About key="1"/> : null}
         {active === "projects" ? <Projects setModal={setModal} /> : null}
-        {active === "resume" ? <Resume /> : null}
         {active === "contact" ? <Contact /> : null}
         {modal === "ri" ? <RIDLT onClose={() => setModal(null)} /> : null}
         {modal === "lc" ? <LC onClose={() => setModal(null)} /> : null}
