@@ -6,11 +6,7 @@ export default function About() {
       <div className="About">
 <h1>about</h1>
 <div className="bioHead">
-As the lead UX designer at Avise, Will manages their design system, 
-conducts user interviews, implements accessibility improvements, 
-and develops the frontend in React/Typescript. In his free time, 
-he can usually be found biking the streets of San Francisco or 
-trekking through alpine meadows of the Sierra Nevada.
+I am a passionate and curious UX Designer and Front-End Developer whose experience spans various disciplines and domains. Most recently, I was the lead UX designer at Avise, where I managed their design system, conducted user interviews, implemented accessibility improvements, and developed the frontend in React/Typescript. 
 </div>
 
       </div>

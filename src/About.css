@@ -9,3 +9,11 @@
 .bioHead{
     border-bottom:1px solid zigzag;
 }
+
+@media (max-width: 1000px){
+    .About{
+        margin:.5rem;
+        width:75vw;
+    }
+  
+}

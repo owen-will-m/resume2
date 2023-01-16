@@ -10,7 +10,6 @@ import Processing from "./Processing";
 import HMP from "./HMP";
 import { ReactComponent as Background } from "./bg.svg";
 import profPic from "./prof-pic.png";
-import {CSSTransition }from 'react-transition-group';
 
 function App() {
   const [active, setActive] = useState("about");
