@@ -19,7 +19,7 @@ function App() {
     <div className="App">
       <div className="header">
         <div className="header-left">
-          <h2>Will M. Owen</h2>
+          <h2>Will Owen</h2>
           <h4>
             UX Designer / Frontend Developer<br></br>
             San Francisco, California
