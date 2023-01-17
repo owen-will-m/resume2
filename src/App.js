@@ -1,7 +1,6 @@
 import "./App.css";
 import About from "./About";
 import Projects from "./Projects";
-import Contact from "./Contact";
 import { useState } from "react";
 import RIDLT from "./RIDLT";
 import LC from "./LC";
@@ -47,7 +46,7 @@ function App() {
             </h4>
           </div>
           <a href = {pdf} target = "_blank" style={
-              { color: "black" } 
+              { color: "black", textDecoration: "none"} 
               } rel="noreferrer">
           <div className="navLink">
             <img className="move" src="shapes/shape3.svg" alt="shape1"></img>
@@ -56,23 +55,12 @@ function App() {
             </h4>
           </div>
           </a>
-          <div className="navLink" onClick={() => setActive("contact")}>
-            <img className="move" src="shapes/shape4.svg" alt="shape1"></img>
-            <h4
-              style={
-                active === "contact" ? { textDecoration: "underline" } : null
-              }
-            >
-              contact
-            </h4>
-          </div>
         </div>
       </div>
       <div className="pageContainer">
 
         {active === "about" ? <About key="1"/> : null}
         {active === "projects" ? <Projects setModal={setModal} /> : null}
-        {active === "contact" ? <Contact /> : null}
         {modal === "ri" ? <RIDLT onClose={() => setModal(null)} /> : null}
         {modal === "lc" ? <LC onClose={() => setModal(null)} /> : null}
         {modal === "pjs" ? <Processing onClose={() => setModal(null)} /> : null}
