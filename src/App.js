@@ -26,7 +26,7 @@ function App() {
         </div>
         <div className="header-right">
           <div className="navLink" onClick={() => setActive("about")}>
-            <img className="move" src="shapes/shape1.svg" alt="shape1"></img>
+            <img className="move" src="shapes/shape1.svg" alt="shape1" style={active==="about"?{animation:"none",top:"0px"}: {}}></img>
             <h4
               style={
                 active === "about" ? { textDecoration: "underline" } : null
@@ -36,7 +36,7 @@ function App() {
             </h4>
           </div>
           <div className="navLink" onClick={() => setActive("projects")}>
-            <img  className="move" src="shapes/shape2.svg" alt="shape1"></img>
+            <img  className="move" src="shapes/shape2.svg" alt="shape1" style={active==="projects"?{animation:"none",top:"0px"}: {}}></img>
             <h4
               style={
                 active === "projects" ? { textDecoration: "underline" } : null
