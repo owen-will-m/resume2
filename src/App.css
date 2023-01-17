@@ -8,16 +8,10 @@
   transform: translate3d(0, 0, 0);
 }
 
-.header {
-  background-color: #f5edee;
-  border-bottom: 1px solid black;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
+
 
 h1 {
-  font-size: 40pt;
+  font-size: 35pt;
   font-weight: 900;
   margin: 0;
   font-family: AvenirHeavy;
@@ -45,6 +39,14 @@ h4 {
 
 html {
   font-size: 14pt;
+}
+
+.header {
+  background-color: #f5edee;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .header-left {
@@ -103,25 +105,6 @@ html {
   position: relative;
   top: -10px;
 }
-
-/* @keyframes spin{
-  0%{
-transform: rotate(0deg);
-  }
-  50%{
-    transform: rotate(180deg);
-
-  }
-  100%{
-    transform: rotate(360deg);
-
-  }
-}
-
-.move{
-animation: spin 5s infinite linear;
-filter:saturate(500%);
-} */
 
 .pageContainer {
   flex: 1;
