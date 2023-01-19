@@ -14,7 +14,7 @@ h1 {
   font-size: 35pt;
   font-weight: 900;
   margin: 0;
-  font-family: AvenirHeavy;
+  font-family: AleoBold;
   margin-bottom: 2rem;
 }
 
@@ -23,7 +23,7 @@ h2 {
   font-weight: 500;
   margin: 0;
   padding: 0;
-  font-family: AvenirDemiBold;
+  font-family: AleoRegular;
   letter-spacing: -1px;
 }
 h3 {
@@ -34,11 +34,13 @@ h3 {
 
 h4 {
   margin: 0;
-  font-size: 16pt;
+  font-size: 18pt;
+  font-family:AleoLight;
 }
 
 html {
   font-size: 14pt;
+  text-decoration-thickness: 5px;
 }
 
 .header {

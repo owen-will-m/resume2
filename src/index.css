@@ -38,3 +38,21 @@ code {
          url("./fonts/AvenirNext-DemiBold.ttf") format("truetype");
         font-weight: 600;
         }
+        @font-face {
+          font-family: "AleoBold";
+          src: local("AleoBold"),
+           url("./fonts/Aleo-Bold.ttf") format("truetype");
+          font-weight: 600;
+          }
+          @font-face {
+            font-family: "AleoLight";
+            src: local("AleoLight"),
+             url("./fonts/Aleo-Light.ttf") format("truetype");
+            font-weight: 600;
+            }
+            @font-face {
+              font-family: "AleoRegular";
+              src: local("AleoRegular"),
+               url("./fonts/Aleo-Regular.ttf") format("truetype");
+              font-weight: 600;
+              }
