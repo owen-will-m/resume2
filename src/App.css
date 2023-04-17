@@ -9,7 +9,10 @@
 }
 
 
-
+a {
+  color:black;
+  text-decoration: none;
+}
 h1 {
   font-size: 35pt;
   font-weight: 900;
@@ -40,7 +43,6 @@ h4 {
 
 html {
   font-size: 14pt;
-  text-decoration-thickness: 5px;
 }
 
 .header {
@@ -110,9 +112,23 @@ html {
 
 .pageContainer {
   flex: 1;
+  display:flex;
+  gap:5rem;
+  flex-direction:column;
   min-height: 0;
   overflow: auto;
   margin-left: 0rem;
+
+}
+
+.outerPageContainer {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  width:100%;
+  /* align-items:center; */
+  margin:auto;
+  /* max-width:1000px; */
 }
 
 .bg {
@@ -156,7 +172,6 @@ html {
 }
 
 #path1 {
-  stroke: black;
 
   animation-timing-function: ease-in-out;
   animation-duration: 10s;
@@ -179,7 +194,6 @@ html {
 }
 
 #path2 {
-  stroke: black;
   animation-timing-function: ease-in-out;
   animation-duration: 10s;
   animation-name: change2;
@@ -199,7 +213,6 @@ html {
 }
 
 #path3 {
-  stroke: black;
   animation-timing-function: ease-in-out;
   animation-duration: 10s;
   animation-name: change3;
@@ -217,7 +230,6 @@ html {
 }
 
 #path4 {
-  stroke: black;
   animation-timing-function: ease-in-out;
   animation-duration: 10s;
   animation-name: change4;
@@ -239,7 +251,6 @@ html {
 }
 
 #path5 {
-  stroke: black;
   animation-timing-function: ease-in-out;
   animation-duration: 10s;
   animation-name: change5;
@@ -257,7 +268,6 @@ html {
 }
 
 #path6 {
-  stroke: black;
   animation-timing-function: ease-in-out;
   animation-duration: 10s;
   animation-name: change6;
@@ -279,7 +289,6 @@ html {
 }
 
 #path7 {
-  stroke: black;
   animation-timing-function: ease-in-out;
   animation-duration: 10s;
   animation-name: change7;

@@ -7,12 +7,9 @@ import LC from "./LC";
 import Processing from "./Processing";
 import HMP from "./HMP";
 import { ReactComponent as Background } from "./bg.svg";
-import profPic from "./prof-pic.png";
-import pdf from "./will-owen-resume.pdf";
-
+import { HashLink } from "react-router-hash-link";
 
 function App() {
-  const [active, setActive] = useState("about");
   const [modal, setModal] = useState(null);
   return (
     <div className="App">
@@ -25,50 +22,36 @@ function App() {
           </h4>
         </div>
         <div className="header-right">
-          <div className="navLink" onClick={() => setActive("about")}>
-            <img className="move" src="shapes/shape1.svg" alt="shape1" style={active==="about"?{animation:"none",top:"0px"}: {}}></img>
-            <h4
-              style={
-                active === "about" ? { textDecoration: "underline" } : null
-              }
-            >
-              about
-            </h4>
-          </div>
-          <div className="navLink" onClick={() => setActive("projects")}>
-            <img  className="move" src="shapes/shape2.svg" alt="shape1" style={active==="projects"?{animation:"none",top:"0px"}: {}}></img>
-            <h4
-              style={
-                active === "projects" ? { textDecoration: "underline" } : null
-              }
-            >
-              projects
-            </h4>
-          </div>
-          <a href = {pdf} target = "_blank" style={
-              { color: "black", textDecoration: "none"} 
-              } rel="noreferrer">
+          <HashLink smooth to="/#about">
+            <div className="navLink">
+              <img className="move" src="shapes/shape1.svg" alt="shape1"></img>
+              <h4>about</h4>
+            </div>
+          </HashLink>
+
           <div className="navLink">
-            <img className="move" src="shapes/shape3.svg" alt="shape1"></img>
-            <h4>
-              resume
-            </h4>
+            <HashLink smooth to="/#projects">
+              <img className="move" src="shapes/shape2.svg" alt="shape1"></img>
+              <h4>projects</h4>
+            </HashLink>
           </div>
-          </a>
         </div>
       </div>
-      <div className="pageContainer">
-
-        {active === "about" ? <About key="1"/> : null}
-        {active === "projects" ? <Projects setModal={setModal} /> : null}
-        {modal === "ri" ? <RIDLT onClose={() => setModal(null)} /> : null}
-        {modal === "lc" ? <LC onClose={() => setModal(null)} /> : null}
-        {modal === "pjs" ? <Processing onClose={() => setModal(null)} /> : null}
-        {modal === "hmp" ? <HMP onClose={() => setModal(null)} /> : null}
+      <div className="outerPageContainer">
+        <div className="pageContainer">
+          <About key="1" />
+          <Projects setModal={setModal} />
+          {modal === "ri" ? <RIDLT onClose={() => setModal(null)} /> : null}
+          {modal === "lc" ? <LC onClose={() => setModal(null)} /> : null}
+          {modal === "pjs" ? (
+            <Processing onClose={() => setModal(null)} />
+          ) : null}
+          {modal === "hmp" ? <HMP onClose={() => setModal(null)} /> : null}
+        </div>
       </div>
       <div className="bg">
-        <Background className="crystals"/>
-        {active === "about" && <img src={profPic} alt="prof-pic" />}
+        <Background className="crystals" />
+        {/* {active === "about" && <img src={profPic} alt="prof-pic" />} */}
       </div>
     </div>
   );
