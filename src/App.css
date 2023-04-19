@@ -1,14 +1,4 @@
 
-.App {
-  /* border: 3px solid black; */
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-
 a {
   color:black;
   text-decoration: none;
@@ -45,100 +35,12 @@ html {
   font-size: 14pt;
 }
 
-.header {
-  background-color: #f5edee;
-  border-bottom: 1px solid black;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
 
-.header-left {
-  margin: 1rem;
-  margin-left: 2rem;
-  margin-top: 1rem;
-}
-
-.header-right {
-  display: flex;
-  align-items: baseline;
-  gap: 4rem;
-  margin: 1rem;
-  margin-right: 2rem;
-}
-
-.navLink {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 18pt;
-  font-weight: 500;
-}
-
-.navLink:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-/* here's where animation happens*/
-
-@keyframes wiggle {
-  0% {
-    transform: rotate(0deg);
-  }
-  16.5% {
-    transform: rotate(15deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  83.5% {
-    transform: rotate(-15deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
 
 .move{
   width:3rem;
 }
 
-.navLink:hover > .move {
-  animation: wiggle 0.3s infinite;
-  position: relative;
-  top: -10px;
-}
-
-.pageContainer {
-  flex: 1;
-  display:flex;
-  gap:5rem;
-  flex-direction:column;
-  min-height: 0;
-  overflow: auto;
-  margin-left: 0rem;
-
-}
-
-.outerPageContainer {
-  flex: 1;
-  min-height: 0;
-  overflow: auto;
-  width:100%;
-  /* align-items:center; */
-  margin:auto;
-  /* max-width:1000px; */
-}
-
-.bg {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  z-index: -10;
-  background-color: #f0e8d1;
-  overflow: hidden;
-}
 
 .bg img {
   position: absolute;

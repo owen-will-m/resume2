@@ -2,7 +2,6 @@ import "./RIDLT.css";
 import Modal from "./Modal";
 import one from "./DLT/1.png";
 import two from "./DLT/2.png";
-import three from "./DLT/3.png";
 import alt from "./alt.tiff";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
@@ -28,11 +27,6 @@ export default function RIDLT(props) {
       />
       <LazyLoadImage
       src={two}
-      alt={alt}
-
-      />
-      <LazyLoadImage
-      src={three}
       alt={alt}
 
       />
