@@ -7,8 +7,10 @@ export default function LC(props) {
       <a
         href="http://corps-discovery-online.s3-us-west-2.amazonaws.com/index.html"
         target="_blank"
+        className="clickableLink"
+        rel="noreferrer"
       >
-        <div className="clickableLink">Click here to view</div>
+        Click here to view
       </a>
       <div>
         When a college is named after two pertinent historical figures, it needs
@@ -18,7 +20,7 @@ export default function LC(props) {
         Leaflet, this Javascript application will teach you all about their
         expedition through step-by-step waypoints.
       </div>
-      <img src="lcmaps.png"></img>
+      <img src="lcmaps.png" alt="LCMAP"></img>
     </Modal>
   );
 }

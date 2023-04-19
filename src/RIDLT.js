@@ -1,11 +1,6 @@
 import "./RIDLT.css";
 import Modal from "./Modal";
-import one from "./DLT/1.png";
-import two from "./DLT/2.png";
-import alt from "./alt.tiff";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-
-
+import styled from "styled-components";
 
 export default function RIDLT(props) {
   return (
@@ -21,16 +16,20 @@ export default function RIDLT(props) {
         overall customer satisfaction. RIDLT was ecstatic with our timely and
         high-quality designs.
       </div>
-      <LazyLoadImage
-      src={one}
-      alt={alt}
-      />
-      <LazyLoadImage
-      src={two}
-      alt={alt}
-
-      />
-
+      <ImageWrapper>
+        <Image src={"DLT/1.png"} />
+        <Image src={"DLT/2.png"} />
+      </ImageWrapper>
     </Modal>
   );
 }
+export const ImageWrapper = styled.div`
+  display: flex;
+  gap:40px;
+`;
+
+export const Image = styled.img`
+flex:1;
+min-width:10px;
+
+`;
