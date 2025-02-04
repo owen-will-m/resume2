@@ -16,20 +16,13 @@ export default function RIDLT(props) {
         overall customer satisfaction. RIDLT was ecstatic with our timely and
         high-quality designs.
       </div>
-      <ImageWrapper>
+      <ImageWrapper className="image-container">
         <Image src={"DLT/1.png"} />
         <Image src={"DLT/2.png"} />
       </ImageWrapper>
     </Modal>
   );
 }
-export const ImageWrapper = styled.div`
-  display: flex;
-  gap:40px;
-`;
+export const ImageWrapper = styled.div``;
 
-export const Image = styled.img`
-flex:1;
-min-width:10px;
-
-`;
+export const Image = styled.img``;

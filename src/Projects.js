@@ -13,7 +13,7 @@ export default function Projects(props) {
             title={"Ojichan: Japanese Quiz App"}
             image={"./ojichan-screenshot.png"}
             callback={() => {
-              window.open("https://ojichan.org", "_blank");
+              window.open("https://ojichan.netlify.app/", "_blank");
             }}
             description={
               "Independently designed & developed React app to accelerate Japanese reading skills for language learners"
@@ -25,7 +25,9 @@ export default function Projects(props) {
             callback={() => {
               window.open("https://avise.com", "_blank");
             }}
-            description={"Accounting software for the 21st century. There, I managed the design system and developed the frontend"}
+            description={
+              "Accounting software for the 21st century. There, I managed the design system and developed the frontend"
+            }
           />
         </SectionsWrapper>
         <SectionsWrapper>
@@ -71,4 +73,7 @@ const SectionsWrapper = styled.div`
   flex-direction: row;
   gap: 40px;
   flex-wrap: wrap;
+  @media (max-width: 600px) {
+    gap: 10px;
+  }
 `;

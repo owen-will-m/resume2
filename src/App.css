@@ -1,6 +1,22 @@
+body {
+  overflow: hidden;
+}
+
+.image-container {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.image-container img {
+  max-width: 700px;
+  @media (max-width: 800px) {
+    width: 40vw;
+  }
+}
 
 a {
-  color:black;
+  color: black;
   text-decoration: none;
 }
 h1 {
@@ -28,19 +44,16 @@ h3 {
 h4 {
   margin: 0;
   font-size: 18pt;
-  font-family:AleoLight;
+  font-family: AleoLight;
 }
 
 html {
   font-size: 14pt;
 }
 
-
-
-.move{
-  width:3rem;
+.move {
+  width: 3rem;
 }
-
 
 .bg img {
   position: absolute;
@@ -57,7 +70,7 @@ html {
   left: 0;
   height: calc(100vh - 8rem);
   width: 100vw;
-  min-width:1000px;
+  /* min-width:1000px; */
 }
 
 @keyframes change1 {
@@ -74,7 +87,6 @@ html {
 }
 
 #path1 {
-
   animation-timing-function: ease-in-out;
   animation-duration: 10s;
   animation-name: change1;
@@ -197,5 +209,3 @@ html {
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
-
-

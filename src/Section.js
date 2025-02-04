@@ -18,21 +18,23 @@ export default function Section({ title, callback, description, image }) {
 const ImageContainer = styled.div`
   display: flex;
   padding-top: 20px;
-  gap:20px;
+  gap: 20px;
+  @media (max-width: 600px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 `;
 
 const TextWrapper = styled.div`
   padding: 0px 10px;
 `;
 const Image = styled.img`
-
   width: 150px;
   height: 120px;
   object-fit: cover;
   object-position: top;
-  border-radius:10px;
-  opacity: .8 ;
-
+  border-radius: 10px;
+  opacity: 0.8;
 `;
 
 const Container = styled.div`
@@ -43,7 +45,10 @@ const Container = styled.div`
   border: 1px solid black;
   border-radius: 10px;
   padding: 25px;
-  min-width:400px;
+  @media (max-width: 600px) {
+    min-width: 300px;
+    padding: 10px;
+  }
 `;
 
 const TitleContainer = styled.div`

@@ -20,7 +20,9 @@ export default function LC(props) {
         Leaflet, this Javascript application will teach you all about their
         expedition through step-by-step waypoints.
       </div>
-      <img src="lcmaps.png" alt="LCMAP"></img>
+      <div className="image-container">
+        <img src="lcmaps.png" alt="LCMAP"></img>
+      </div>
     </Modal>
   );
 }

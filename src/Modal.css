@@ -1,15 +1,22 @@
 .Modal {
-  position: absolute;
-  top: 2.5vh;
-  left: 2.5vh;
-  width: calc(100vw - 5vh);
-  height: 95vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  margin: 2rem;
+  height: calc(100% - 4rem);
+
   z-index: 10;
   border-radius: 10px;
   background-color: #f5edee;
   display: flex;
   flex-direction: column;
-  animation: slideUp .3s ease-out;
+  animation: slideUp 0.3s ease-out;
+
+  @media (max-width: 600px) {
+    margin: 0px;
+    border-radius: 0px;
+    height: 100vh;
+  }
 }
 
 @keyframes slideUp {
@@ -50,7 +57,6 @@
   padding: 1rem;
   overflow: auto;
   gap: 1rem;
-  padding: 1rem 7rem;
   border: 1px solid black;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -59,6 +65,8 @@
 .modalContainer img {
   border-radius: 10px;
   border: 1px solid black;
+  width: 100%;
+  max-width: 700px;
 }
 
 .modalContainer h1 {

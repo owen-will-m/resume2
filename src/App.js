@@ -18,7 +18,7 @@ function App() {
         <HeaderLeft>
           <h2>Will Owen</h2>
           <h4>
-            Frontend Developer / UX Designer<br></br>
+            Frontend Developer<br></br>
             San Francisco, California
           </h4>
         </HeaderLeft>
@@ -48,7 +48,6 @@ function App() {
       </OuterPageContainer>
       <BG>
         <Background className="crystals" />
-        {/* {active === "about" && <img src={profPic} alt="prof-pic" />} */}
       </BG>
     </MainContainer>
   );
@@ -58,6 +57,7 @@ export default App;
 
 const MainContainer = styled.div`
   height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   -webkit-transform: translate3d(0, 0, 0);
@@ -65,11 +65,18 @@ const MainContainer = styled.div`
 `;
 
 const Header = styled.div`
+  /* width: 100%;
+  border-bottom: 1px solid black; */
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* align-items: flex-end; */
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-end;
   background-color: #f5edee;
   border-bottom: 1px solid black;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
 `;
 
 const HeaderLeft = styled.div`
@@ -84,6 +91,11 @@ const HeaderRight = styled.div`
   gap: 4rem;
   margin: 1rem;
   margin-right: 2rem;
+  @media (max-width: 600px) {
+    height: 0px;
+    visibility: hidden;
+    margin: 0px;
+  }
 `;
 
 const wiggleAnimation = keyframes`
@@ -127,7 +139,6 @@ const NavLink = styled(HashLink)`
 const PageContainer = styled.div`
   flex: 1;
   display: flex;
-  gap: 5rem;
   flex-direction: column;
   min-height: 0;
   overflow: auto;
